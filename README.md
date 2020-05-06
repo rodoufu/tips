@@ -1,5 +1,5 @@
 # tips
 
-[docker](docker.md)
-[kafka](kafka.md)
-[kubectl](kubectl.md)
+- [docker](docker.md)
+- [kafka](kafka.md)
+- [kubectl](kubectl.md)
