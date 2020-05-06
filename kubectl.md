@@ -6,7 +6,7 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 kubectl get pod --all-namespaces
 ```
 
-## Trocar contexto
+## Switch context
 
 ```sh
 kubectl config use-context ireland.kubernetes.qume.io
@@ -52,4 +52,16 @@ kubectl port-forward -n parity-net parity-net-0 8545 8546 30303
 
 ```sh
 kubectl port-forward -n parity-net $(kubectl get pod -l app=eth-node -n parity-net -ojsonpath='{.items[0].metadata.name}')  8545 8546 30303
+```
+
+## Scale pod
+
+```sh
+kubectl -n ${NS} scale sts wallet-crypto --replicas=0
+```
+
+## List running pods
+
+```sh
+kubectl -n ${NS} get pods
 ```
