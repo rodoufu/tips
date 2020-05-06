@@ -20,3 +20,10 @@ cargo clippy
 ```sh
 cargo build --release
 ```
+
+## Install nightly
+
+```sh
+rustup toolchain install nightly
+cargo +nightly test
+```
