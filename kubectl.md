@@ -65,3 +65,14 @@ kubectl -n ${NS} scale sts wallet-crypto --replicas=0
 ```sh
 kubectl -n ${NS} get pods
 ```
+
+## Get logs
+
+```sh
+kubectl logs -n <namespace> <pod> <container>
+```
+
+If you want to keep listening to it, add the `-f` parameter.
+```sh
+kubectl logs -f -n <namespace> <pod> <container>
+```
