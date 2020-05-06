@@ -5,3 +5,4 @@
 - [kafka](kafka.md)
 - [kubectl](kubectl.md)
 - [rust](rust.md)
+- [zookeeper](zookeeper.md)
