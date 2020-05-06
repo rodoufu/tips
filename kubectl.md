@@ -49,3 +49,7 @@ kubectl exec -it -n parity-net parity-net-0 -- /bin/bash
 ```sh
 kubectl port-forward -n parity-net parity-net-0 8545 8546 30303
 ```
+
+```sh
+kubectl port-forward -n parity-net $(kubectl get pod -l app=eth-node -n parity-net -ojsonpath='{.items[0].metadata.name}')  8545 8546 30303
+```
