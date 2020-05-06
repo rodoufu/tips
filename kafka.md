@@ -34,3 +34,8 @@ done
 echo '{"blockNumber":"0x8dde30","assetId":"ETH"}' | /kafka_2.12-2.3.0/bin/kafka-console-producer.sh --broker-list kafka-operator-kafka-bootstrap.kafka:9092 --topic ProcessBlockRequest > /dev/null
 ```
 
+## Removing a topic
+
+```sh
+/home/kafka/kafka/bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic WithdrawalRequest
+```
