@@ -39,3 +39,18 @@ echo '{"blockNumber":"0x8dde30","assetId":"ETH"}' | /kafka_2.12-2.3.0/bin/kafka-
 ```sh
 /home/kafka/kafka/bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic WithdrawalRequest
 ```
+
+## Kafdrop
+
+https://github.com/HomeAdvisor/Kafdrop
+
+https://github.com/obsidiandynamics/kafdrop
+
+```
+kafdrop_docker:
+	docker run --name kafdrop -it --rm --net="host" -v $(kafdrop_path):/Kafdrop 99taxis/mini-java8 /bin/bash
+kafdrop_start:
+	nohup docker run --name kafdrop --rm --net="host" -v $(kafdrop_path):/Kafdrop 99taxis/mini-java8 java -jar /Kafdrop/target/kafdrop-2.0.6.jar --zookeeper.connect=$(zookeeper) > kafdrop.out 2>&1 &
+kafdrop_stop:
+	docker stop kafdrop
+```
