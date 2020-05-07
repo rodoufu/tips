@@ -1,5 +1,6 @@
 # tips
 
+- [bitcoind](bitcoind.md)
 - [docker](docker.md)
 - [go](go.md)
 - [kafka](kafka.md)
