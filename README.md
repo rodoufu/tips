@@ -9,6 +9,7 @@
 - devops
   - [docker](devops/docker.md)
   - [kubectl](devops/kubectl.md)
+  - [vault](devops/vault.md)
 - tools
   - [kafka](tools/kafka.md)
   - [zookeeper](tools/zookeeper.md)
