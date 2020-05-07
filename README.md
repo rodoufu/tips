@@ -1,14 +1,14 @@
 # tips
 
 - code
-  - [go](go.md)
-  - [rust](rust.md)
+  - [go](code/go.md)
+  - [rust](code/rust.md)
 - crypto
-  - [bitcoind](bitcoind.md)
-  - [parity](parity.md)
+  - [bitcoind](crypto/bitcoind.md)
+  - [parity](crypto/parity.md)
 - devops
-  - [docker](docker.md)
-  - [kubectl](kubectl.md)
+  - [docker](devops/docker.md)
+  - [kubectl](devops/kubectl.md)
 - tools
-  - [kafka](kafka.md)
-  - [zookeeper](zookeeper.md)
+  - [kafka](tools/kafka.md)
+  - [zookeeper](tools/zookeeper.md)
