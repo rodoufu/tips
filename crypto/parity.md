@@ -15,8 +15,8 @@ curl --data '{"method":"eth_getBalance","params":["0x00a329c0648769a73afac7f9381
 ## Making a transaction.
 
 ```sh
-export transfer_from='0x00a329c0648769a73afac7f9381e08fb43dbea72'`
-`export transfer_to='0x8f420832871d9b7205491cd59cdb30507a744500'`
+export transfer_from='0x00a329c0648769a73afac7f9381e08fb43dbea72'
+export transfer_to='0x8f420832871d9b7205491cd59cdb30507a744500'
 ```
 
 Then create the transaction params:
