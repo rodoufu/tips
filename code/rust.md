@@ -27,3 +27,6 @@ cargo build --release
 rustup toolchain install nightly
 cargo +nightly test
 ```
+## Check for updates
+
+Call the Python3 script [check_crates.py](check_crates.py).
