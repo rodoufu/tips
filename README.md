@@ -11,5 +11,6 @@
   - [kubectl](devops/kubectl.md)
   - [vault](devops/vault.md)
 - tools
+  - [git](tools/git.md)
   - [kafka](tools/kafka.md)
   - [zookeeper](tools/zookeeper.md)
