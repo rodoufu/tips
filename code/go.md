@@ -9,9 +9,8 @@ go get -u -v -f all
 ## Update a specific dependency
 
 ```sh
-go get -u github.com/modular-network/zabo-api-provider
-go get -u github.com/modular-network/zabo-api-resources
-go get -u github.com/modular-network/zabo-api-utils
+go get -u https://github.com/go-resty/resty
+go get -u https://github.com/go-aah/aah
 ```
 
 ## Update a dependency with for specific branch
