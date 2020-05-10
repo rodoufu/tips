@@ -24,7 +24,7 @@ aws ec2 describe-key-pairs --query 'KeyPairs[*].KeyName'
 ## Get the log for a specific instance
 
 ```sh
-aws ec2 get-console-output --instance-id i-0ca39ffb8a3a26d87 --latest | jq .Output
+aws ec2 get-console-output --instance-id i-0ba29afc833a46787 --latest | jq .Output
 ```
 
 https://docs.aws.amazon.com/cli/latest/reference/ec2/get-console-output.html
