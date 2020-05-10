@@ -7,6 +7,7 @@
   - [bitcoind](crypto/bitcoind.md)
   - [parity](crypto/parity.md)
 - devops
+  - [aws](devops/aws.md)
   - [docker](devops/docker.md)
   - [kubectl](devops/kubectl.md)
   - [vault](devops/vault.md)
