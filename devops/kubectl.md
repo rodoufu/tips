@@ -76,3 +76,29 @@ If you want to keep listening to it, add the `-f` parameter.
 ```sh
 kubectl logs -f -n <namespace> <pod> <container>
 ```
+
+## Deployments
+
+## Apply
+
+```sh
+kubectl apply -f nginx-deployment.yaml
+```
+
+### List
+
+```sh
+kubectl get deployment
+```
+
+### Delete
+
+```sh
+kubectl delete deployment nginx-deployment
+```
+
+### Describe
+
+```sh
+kubectl describe deployments
+```
