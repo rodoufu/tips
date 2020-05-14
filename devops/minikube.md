@@ -28,3 +28,9 @@ minikube stop
 ```sh
 minikube dashboard
 ```
+
+## Delete
+
+```sh
+minikube delete
+```
