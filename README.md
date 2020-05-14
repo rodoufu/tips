@@ -10,6 +10,7 @@
   - [aws](devops/aws.md)
   - [docker](devops/docker.md)
   - [kubectl](devops/kubectl.md)
+  - [minikube](devops/minikube.md)
   - [vault](devops/vault.md)
 - tools
   - [git](tools/git.md)
