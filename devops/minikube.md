@@ -16,3 +16,9 @@ minikube start --driver=docker
 ```sh
 minikube start --driver=kvm2
 ```
+
+## Stop
+
+```sh
+minikube stop
+```
