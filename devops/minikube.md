@@ -22,3 +22,9 @@ minikube start --driver=kvm2
 ```sh
 minikube stop
 ```
+
+## Dashboard
+
+```sh
+minikube dashboard
+```
