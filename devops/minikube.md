@@ -16,29 +16,3 @@ minikube start --driver=docker
 ```sh
 minikube start --driver=kvm2
 ```
-
-## Deployments
-
-## Apply
-
-```sh
-kubectl apply -f nginx-deployment.yaml
-```
-
-### List
-
-```sh
-kubectl get deployment
-```
-
-### Delete
-
-```sh
-kubectl delete deployment nginx-deployment
-```
-
-### Describe
-
-```sh
-kubectl describe deployments
-```
