@@ -11,8 +11,17 @@ git fetch --all
 ### Adding
 
 ```sh
-git submodule add https://github.com/google/googletest/
+git submodule add git@mygithost:billboard lib/billboard
 ```
+
+## Remove
+
+Remove the entry from `.gitmodules`, remove the entry from `.git/config`, remove the foder, and then:
+
+```sh
+git rm --cached lib/billboard
+```
+
 ### Clone project and sub-modules
 
 ```sh
@@ -23,4 +32,16 @@ git clone --recurse-submodules https://github.com/grpc/grpc
 
 ```sh
 git submodule update --init --recursive
+```
+
+### Initialize
+
+```sh
+git submodule init
+```
+
+### Update
+
+```sh
+git submodule update
 ```
