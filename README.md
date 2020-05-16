@@ -9,7 +9,9 @@
 - devops
   - [aws](devops/aws.md)
   - [docker](devops/docker.md)
-  - [kubectl](devops/kubectl.md)
+  - k8s
+    - [kubectl](devops/kubectl.md)
+    - [kubernetes](devops/kubernetes.md)
   - [minikube](devops/minikube.md)
   - [vault](devops/vault.md)
 - tools
