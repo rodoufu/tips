@@ -11,7 +11,7 @@
   - [docker](devops/docker.md)
   - k8s
     - [kubectl](devops/k8s/kubectl.md)
-    - [kubernetes](devops/kubernetes.md)
+    - [kubernetes](devops/k8s/kubernetes.md)
   - [minikube](devops/minikube.md)
   - [vault](devops/vault.md)
 - tools
@@ -19,4 +19,3 @@
   - [kafka](tools/kafka.md)
   - [shell](tools/shell.md)
   - [zookeeper](tools/zookeeper.md)
-
