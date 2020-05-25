@@ -12,7 +12,7 @@
   - k8s
     - [kubectl](devops/k8s/kubectl.md)
     - [kubernetes](devops/k8s/kubernetes.md)
-    - [minikube](devops/minikube.md)
+    - [minikube](devops/k8s/minikube.md)
   - [vault](devops/vault.md)
 - tools
   - [git](tools/git.md)
