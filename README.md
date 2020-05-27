@@ -1,14 +1,25 @@
 # tips
 
 - code
+  - [c](code/c.md)
+  - [c++](code/cpp.md)
   - [go](code/go.md)
+  - java
+    - [java](code/java/java.md)
+    - js
+      - [js](code/java/js/js.md)
+      - [node](code/java/js/node.md)
+  - [python](code/python.md)
   - [rust](code/rust.md)
 - crypto
   - [bitcoind](crypto/bitcoind.md)
   - [parity](crypto/parity.md)
 - devops
   - [aws](devops/aws.md)
-  - [docker](devops/docker.md)
+  - docker
+    - [docker](devops/docker.md)
+    - [docker-compose](devops/docker/docker-compose.md)
+    - [swarm](devops/docker/swarm.md)
   - k8s
     - [kubectl](devops/k8s/kubectl.md)
     - [kubernetes](devops/k8s/kubernetes.md)
