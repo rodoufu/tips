@@ -24,6 +24,7 @@
     - [kubectl](devops/k8s/kubectl.md)
     - [kubernetes](devops/k8s/kubernetes.md)
     - [minikube](devops/k8s/minikube.md)
+  - [unix](devops/unix.md)
   - [vault](devops/vault.md)
 - tools
   - [git](tools/git.md)
