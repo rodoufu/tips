@@ -28,3 +28,9 @@ aws ec2 get-console-output --instance-id i-0ba29afc833a46787 --latest | jq .Outp
 ```
 
 https://docs.aws.amazon.com/cli/latest/reference/ec2/get-console-output.html
+
+## Filter result
+
+```sh
+aws ec2 describe-instances --query "Reservations[*].Instances[?InstanceId=='i-095b5a1c8c2deed1d']"
+```
