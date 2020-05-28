@@ -45,3 +45,9 @@ git submodule init
 ```sh
 git submodule update
 ```
+
+## Using a specific SSH key
+
+```sh
+ssh-agent bash -c 'ssh-add ~/.ssh/<KeyName>; git push'
+```
