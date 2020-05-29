@@ -14,7 +14,7 @@ git fetch --all
 git submodule add git@mygithost:billboard lib/billboard
 ```
 
-## Remove
+### Remove
 
 Remove the entry from `.gitmodules`, remove the entry from `.git/config`, remove the foder, and then:
 
