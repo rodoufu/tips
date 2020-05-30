@@ -20,6 +20,7 @@
     - [docker](devops/docker.md)
     - [docker-compose](devops/docker/docker-compose.md)
     - [swarm](devops/docker/swarm.md)
+    - [stack](devops/docker/stack.md)
   - k8s
     - [kubectl](devops/k8s/kubectl.md)
     - [kubernetes](devops/k8s/kubernetes.md)
