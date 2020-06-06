@@ -1,6 +1,8 @@
 # Kafka
 
-## Size of topics
+## Quick tips
+
+### Size of topics
 
 In case disks are being crazily filled up by Kafka and you need to find out who's the bad guy:
 
@@ -16,25 +18,25 @@ echo ${p}; kubectl -n development exec -it ${p} -- sh -c 'cd /var/lib/kafka/data
 done
 ```
 
-## Getting the lag for a consumer group
+### Getting the lag for a consumer group
 
 ```sh
 /kafka_2.12-2.3.0/bin/kafka-consumer-groups.sh --bootstrap-server kafka-operator-kafka-bootstrap.kafka:9092 --describe --group process_block_request_group
 ```
 
-## Consuming all messages
+### Consuming all messages
 
 ```sh
 /kafka_2.12-2.3.0/bin/kafka-console-consumer.sh --bootstrap-server kafka-operator-kafka-bootstrap.kafka:9092 --topic DepositNotification-FIXME --from-beginning
 ```
 
-## Producing a message
+### Producing a message
 
 ```sh
 echo '{"blockNumber":"0x8dde30","assetId":"ETH"}' | /kafka_2.12-2.3.0/bin/kafka-console-producer.sh --broker-list kafka-operator-kafka-bootstrap.kafka:9092 --topic ProcessBlockRequest > /dev/null
 ```
 
-## Removing a topic
+### Removing a topic
 
 ```sh
 /home/kafka/kafka/bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic WithdrawalRequest
@@ -53,4 +55,24 @@ kafdrop_start:
 	nohup docker run --name kafdrop --rm --net="host" -v $(kafdrop_path):/Kafdrop 99taxis/mini-java8 java -jar /Kafdrop/target/kafdrop-2.0.6.jar --zookeeper.connect=$(zookeeper) > kafdrop.out 2>&1 &
 kafdrop_stop:
 	docker stop kafdrop
+```
+
+## kafkacat
+
+### List topics
+
+```sh
+kafkacat -b kafka:9092 -L
+```
+
+### Consume all messages from a topic
+
+```sh
+kafkacat -b kafka:9092 -C -t mytopic
+```
+
+### Producing messages from stdin
+
+```sh
+kafkacat -b kafka:9092 -P -t mytopic
 ```
