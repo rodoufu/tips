@@ -22,6 +22,7 @@
     - [swarm](devops/docker/swarm.md)
     - [stack](devops/docker/stack.md)
   - k8s
+    - [k3d](devops/k8s/k3d.md)
     - [kubectl](devops/k8s/kubectl.md)
     - [kubernetes](devops/k8s/kubernetes.md)
     - [minikube](devops/k8s/minikube.md)
