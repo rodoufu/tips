@@ -17,3 +17,12 @@ ssh -i <Key location> <user>@<host name>
 ```sh
 sudo lsof -i -P -n | grep LISTEN
 ```
+
+## Ubuntu
+
+### Restarting mouse touchpad
+
+```sh
+$ sudo rmmod hid_multitouch 
+$ sudo modprobe hid_multitouch
+```
