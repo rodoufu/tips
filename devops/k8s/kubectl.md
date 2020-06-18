@@ -77,6 +77,12 @@ If you want to keep listening to it, add the `-f` parameter.
 kubectl logs -f -n <namespace> <pod> <container>
 ```
 
+## List the k8s DNS
+
+```sh
+kubectl get vs -n staging
+```
+
 ## Deployments
 
 ## Apply
