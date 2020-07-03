@@ -25,3 +25,5 @@ export KUBECONFIG="$(k3d get-kubeconfig --name='dev')"
 kubectl cluster-info
 kubectl get nodes
 ```
+
+https://medium.com/@yannalbou/k3d-k3s-k8s-perfect-match-for-dev-and-testing-896c8953acc0
