@@ -108,3 +108,8 @@ kubectl delete deployment nginx-deployment
 ```sh
 kubectl describe deployments
 ```
+### Filter pod name by tag
+
+```sh
+kubectl get pod -l app=eth-node -n parity-net -ojsonpath='{.items[0].metadata.name}'
+```
