@@ -42,6 +42,15 @@ echo '{"blockNumber":"0x8dde30","assetId":"ETH"}' | /kafka_2.12-2.3.0/bin/kafka-
 /home/kafka/kafka/bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic WithdrawalRequest
 ```
 
+### Setting the offset of a consumer group for a topic
+
+```sh
+bash /kafka_2.12-2.3.0/bin/kafka-consumer-groups.sh --bootstrap-server $KAFKA --group ob_persistence_beta --topic orderbook_update --reset-offsets --to-offset 52178 --execute
+```
+
+Aditional help:
+https://gist.github.com/marwei/cd40657c481f94ebe273ecc16601674b
+
 ## Kafdrop
 
 https://github.com/HomeAdvisor/Kafdrop
