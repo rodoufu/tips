@@ -17,3 +17,9 @@ docker run -it me/wallet-backend-eth:v1 /bin/bash
 ```sh
 docker exec -it $(docker container ls | grep $container_name | awk '{print $1}') /bin/bash
 ```
+
+## Logs
+
+```sh
+docker logs $(docker container ls | grep $container_name | awk '{print $1}') --tail 10 -f 2>&1 | grep "looking for this"
+```
