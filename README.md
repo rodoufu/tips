@@ -33,3 +33,4 @@
   - [kafka](tools/kafka.md)
   - [shell](tools/shell.md)
   - [zookeeper](tools/zookeeper.md)
+  - [redis](tools/redis.md)
