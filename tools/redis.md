@@ -81,3 +81,15 @@ redis:6379> XREADGROUP GROUP mygroup01 Alice COUNT 1 STREAMS mystream >
         2) 1) "message"
            2) "apple"
 ```
+
+## Installing node redis client
+
+```sh
+npm install -g redis-cli
+```
+
+Then you can run it with the command:
+
+```sh
+rdcli -h your.redis.host -a yourredispassword -p 11111
+```
