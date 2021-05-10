@@ -39,6 +39,11 @@ func TestAbs(t *testing.T) {
 }
 ```
 
+Running coverage tests:
+```sh
+go test -cover ./...
+```
+
 ### Benchmarks
 
 ```go
@@ -47,4 +52,10 @@ func BenchmarkHello(b *testing.B) {
         fmt.Sprintf("hello")
     }
 }
+```
+
+Running the benchmark tests:
+
+```sh
+go test -bench=. -run=Bench -v ./...
 ```
