@@ -13,6 +13,12 @@ go get -u https://github.com/go-resty/resty
 go get -u https://github.com/go-aah/aah
 ```
 
+## Removing unused dependencies
+
+```sh
+go mod tidy
+```
+
 ## Update a dependency with for specific branch
 
 ```sh
