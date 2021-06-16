@@ -6,6 +6,10 @@
 go get -u -v -f all
 ```
 
+```sh
+go mod download
+```
+
 ## Update a specific dependency
 
 ```sh
