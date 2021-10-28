@@ -82,6 +82,14 @@ redis:6379> XREADGROUP GROUP mygroup01 Alice COUNT 1 STREAMS mystream >
            2) "apple"
 ```
 
+### Listing all the keys
+
+```sh
+redis:6379> keys *
+1) stream_a
+1) stream_b
+```
+
 ## Installing node redis client
 
 ```sh
